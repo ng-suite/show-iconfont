@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Icon - Show iconfont!</title>
+    <link rel="stylesheet" href="{{style}}">
+    <style>
+        html, body {
+            margin: 0;
+        }
+        ul {
+            list-style: none;
+        }
+        ul li {
+            float: left;
+            width: 16.66%;
+            text-align: center;
+            list-style: none;
+            cursor: pointer;
+            height: 100px;
+            color: #555;
+            transition: .3s;
+            position: relative;
+            margin: 3px 0;
+            border-radius: 4px;
+            background-color: #fff;
+            overflow: hidden;
+            padding: 10px 0 0;
+        }
+        ul li:hover {
+            background-color: #1890ff;
+            color: #fff;
+        }
+        ul li .nsicon {
+            font-size: 24px;
+            margin: 12px 0 16px;
+            transition: .3s;
+        }
+        ul li .nsicon-class {
+            display: block;
+            text-align: center;
+            -webkit-transform: scale(.83);
+            transform: scale(.83);
+            font-family: "Lucida Console",Consolas;
+            white-space: nowrap;
+        }
+        ul li .nsicon-class .ns-badge {
+            font-family: "Monospaced Number","Chinese Quote",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Helvetica Neue",Helvetica,Arial,sans-serif;
+            font-size: 14px;
+            font-variant: tabular-nums;
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            position: relative;
+            display: inline-block;
+            line-height: 1;
+            vertical-align: middle;
+            color: unset;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        {{list}}
+    </ul>
+</body>
+</html>
